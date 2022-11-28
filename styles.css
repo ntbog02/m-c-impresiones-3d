@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro:wght@700&display=swap');
+
+.navbar{
+    background: linear-gradient(180deg, rgba(195,34,34,1) 0%, rgba(128,16,16,1) 100%);
+    width: 100%;
+}
+/* INICIO.PRODUCTOS.CONTACTO */
+.nav-item .nav-link{
+    font-family: 'Poppins', sans-serif;
+}
+.dropdown-menu{
+    font-family: 'Poppins', sans-serif;
+    background: brown;
+}
+.fa-solid:hover{
+    color: #fff;
+}
+/* SEARCH */
+.box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 40px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.box:hover input{
+    width: 400px;
+}
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.box a .fa-solid{
+    color: #000;
+    font-size: 18px;
+}
+/* LOGIN MODAL */
+body .modal{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor{
+    width: 26rem;
+    height: 18.77rem;
+    background: brown;
+    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
+    transition: all 500ms ease;
+    position: relative;
+    transform: translateY(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor{
+    transform: translateY(0%);
+}
+.logo_myc img{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    bottom: 13rem;
+    left: 6rem;
+}
+.modal-header p{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    top: .3rem;
+    right:8rem;
+}
+.modal-content{
+    position: relative;
+    background: brown;
+    height: 25rem;
+}
+.contenedor label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#btn-modal{
+    display: none;
+}
+.lbl-modal{
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-label{
+    left: 1rem;
+}
+.btn_ingresar{
+    position: relative;
+    width: 20rem;
+    left: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+.registrarse{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    left: 7rem;
+}
+.ntnes-cnta{
+    position: relative;
+    left: .6rem;
+}
+
+*/
+/* PRODUCTOS */
+.among-us{
+    font-family: 'Poppins', sans-serif;
+}
+/*CARDs*/
+.grid{
+    margin: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    /* left: 4rem; */
+    justify-content: center;
+    gap: 1rem;
+}
+ .card{
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 16rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 14px 10px 14px;
+    position: relative;
+    background:#c32222;
+    border-radius: 1.25rem;
+    overflow: hidden;
+ }
+ .card::before{
+     content: '';
+     position: absolute;
+     top: -50%;
+     width: 100%;
+     height: 100%;
+     background:linear-gradient(180deg, rgba(195,34,34,1) 0%, rgba(128,16,16,1) 100%);
+     transform: skewY(345deg);
+     transition: 0.5s;
+ }
+ .card:hover::before{
+     top: -70%;
+     transform: skewY(390deg);
+ }
+ .card::after{
+     content: 'UWU';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     font-weight: 600;
+     font-size: 8em;
+     color: #082428;
+ }
+ /*IMAGEN*/
+ .card .imgBx{
+     display: flex;
+     position: relative;
+     width: 60%;
+     left: .1rem;
+     justify-content: center;
+     align-items: center;
+     padding-top: 5px;
+     z-index: 10;
+ }
+ .card .imgBx img{
+     width: 140%;
+     transition: 0.5s;
+ }
+ .card:hover .imgBx img{
+     max-width: 90%;
+ }
+ /*PRECIO*/
+ .card .contentBx{
+     position: relative;
+     padding: 1px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     z-index: 20;
+ }
+ .card .contentBx h3{
+     font-size: 18px;
+     color: #fff;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ }
+ .card .contentBx .price{
+     font-size: 22px;
+     color: #fff;
+     font-weight: 400;
+     letter-spacing: 1px;
+ }
+ .card .contentBx .buy{
+     position: relative;
+     top: 180px;
+     opacity: 0;
+     padding: 10px 50px;
+     margin-top: 15px;
+     color: #fff;
+     text-decoration: none;
+     background: rgb(255, 0, 0);
+     border-radius: 30px;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     transition: 0.5s;
+ }
+ .card:hover .contentBx .buy{
+     top: 0;
+     opacity: 1;
+ }
+/*  BOTON VER MAS */
+ .btn_chevron{
+    background: #D93A0C;
+    font-family: 'Poppins', sans-serif;
+}
+ /* FORMULARIO */
+ .formulario_de_contacto{
+    background: linear-gradient(180deg, rgba(195,34,34,1) 0%, rgba(128,16,16,1) 100%);
+    height: 28rem;
+ }
+ .header_contacto{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    top: 1rem;
+    margin: 2rem 1rem;
+ }
+ .formulario{
+    margin: 1rem;
+    font-size: small;
+    top: 1rem;
+ }
+ .nombre{
+    width: 38rem;
+    margin-bottom: 1rem;
+ } 
+.tel-input{
+    width: 12rem;
+ }
+ .textarea{
+    position: relative;
+    top: 1rem;
+    width: 38rem;
+ }
+ .col-12 .btn{
+    position: relative;
+    top:2rem;
+    background: #D93A0C;
+    font-family: 'Poppins', sans-serif;
+ } .btn1{
+    width: 7rem;
+    background: #D93A0C;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 23px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+ }
+ .map-responsive{
+    left: 40rem;
+    bottom: 24rem;
+    width: 38rem;
+ }
+ /* FOOTER */
+ .footer__container{
+    position: relative;
+    top: 1rem;
+    margin: 1rem 1.4rem;
+ }
+ .footer__top__items{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-family: 'Poppins', sans-serif;
+ }
+ .footer__top__icon1{
+    width: 10rem;
+    height: 7rem;
+ }
+ .footer_social-media-list{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+ }
+ .derechos-de-autor{
+    position: relative;
+    top: 12rem;
+    font-family: 'Poppins', sans-serif;
+ }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 1236px) {
+    .tel-input{
+        width: 12.3rem;
+     }
+    .map-responsive {
+    width: 36rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tel-input{
+        width: 13rem;
+     }
+    .map-responsive {
+     width: 33rem;
+     }
+}
+
+@media only screen and (max-width: 992px) {
+    .tel-input{
+        width: 17.3rem;
+     }
+    .map-responsive {
+     width: 20rem;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+    .tel-input{
+        width: 22rem;
+     }
+    .map-responsive {
+        display: none !important;
+     }
+}
+
+@media only screen and (max-width: 600px) {
+    .formulario_de_contacto{
+        height: 33rem;
+    }
+    .nombre{
+        width: 0;
+    }    
+    .formulario_de_contacto input, .textarea{
+        width: auto;
+    }
+    .tel-input{
+        width: 22rem;
+    }
+}

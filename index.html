@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b7c6de2579.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>M & C Impreciones 3D</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/myc-logo.png" alt="logo_myc" width="127" height="73">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Figuras</a></li>
+                            <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                            <li><a class="dropdown-item" href="#">Llaveros</a></li>
+                            <li><a class="dropdown-item" href="#">Más+</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto1">Contacto</a>
+                    </li>
+                </ul>
+                <div class="box">
+                    <input type="text" placeholder="Search...">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <!-- Button trigger modal User-->
+                <div class="botones">
+                    <input type="checkbox" id="btn-modal">
+                    <label for="btn-modal" class="lbl-modal"> <i class="fa-solid fa-user text-white"></i></label>
+                    <div class="modal">
+                        <div class="contenedor">
+                            <div class="modal-header">
+                                <a class="logo_myc">
+                                    <img src="img/myc-logo-png.png"
+                                        alt="logo_myc">
+                                </a>
+                                <p class="login text-white">LOGIN</p>
+                            </div>
+                            <label for="btn-modal"><i class="fa-solid fa-circle-xmark text-light"></i></label>
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label text-white d-flex position-relative"
+                                            for="loginName">Email o Usuario</label>
+                                        <input type="email" id="loginName" class="form-control" />
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <label class="form-label text-white d-flex position-relative"
+                                            for="loginPassword">Contraseña</label>
+                                        <input type="password" id="loginPassword" class="form-control" />
+                                    </div>
+                                    <div class="row mb-4">
+                                        <div class="col rembrme d-flex justify-content-center">
+                                            <!--link -->
+                                            <a href="#!" class="text-white-50">Olvidaste tu contraseña?</a>
+                                        </div>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <button type="button" class="btn btn_ingresar">Ingresar</button>
+                                </div>
+                                <div class="registrarse">
+                                    <p class="mb-0 text-white d-flex">No tienes una cuenta?<a href="#!"
+                                    class="text-white-50 fw-bold ntnes-cnta">Registrarse</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn"><i class="fa-solid fa-cart-shopping text-white"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel1.png" class="d-block w-100" alt="img1">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel2.png" class="d-block w-100" alt="img2">
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel3.png" class="d-block w-100" alt="img3">
+            </div>
+        </div>
+    </div>
+    <!-- CAROUSEL -->
+    <div class="px-4 py-5 my-5 text-center">
+        <div class="among-us"><iframe src="https://giphy.com/embed/nu8afydwOkzgqLjerc" width="200" height="100"
+                frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+        <h1 class="display-5 fw-bold">Nuevos Productos</h1>
+    </div>
+    <!-- CARD -->
+    <section class="grid">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <!-- CARD 2-->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones2">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <!-- CARD 3-->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones3">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <!-- CARD 4-->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones4">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+        
+        <!-- CARDs SEGUNDA FILA-->
+        
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones1">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <!-- CARD 2-->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones1.2">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <!-- CARD 3-->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones1.3">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+            <!-- CARD 4-->
+            <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones1.4">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+             <!-- CARD 5-->
+             <div class="card">
+                <div class="imgBx">
+                    <img src="img/pockemones-removebg-preview.png" alt="img_kokemones1.4">
+                </div>
+                <div class="contentBx">
+                    <h3>kokemones</h3>
+                    <h2 class="price">$450<small>99</small></h2>
+                    <a href="#" class="buy">Comprar</a>
+                </div>
+            </div>
+        <!-- CARD -->
+    </section>
+    <!-- BOTON -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <a class="btn btn_chevron" href="productos.html" role="button">ver más</a>
+    </div>
+    <!-- BOTON -->
+    <!-- FORMULARIO DE CONTACTO-->
+    <form action="https://usebasin.com/f/626352ecf6be" method="POST" enctype="multipart/form-data" class="formulario_de_contacto">
+        <div class="header_contacto d-flex position-relative text-white">
+            <p id="contacto1">CONTACTO</p>
+        </div>
+        <div class="formulario">
+            <div class="nombre">
+                <label for="inputNombre" class="form-label text-white">Nombre completo</label>
+                <input type="text" name="name" class="form-control" id="inputNombre" required>
+            </div>
+            <div class="row">
+                <div class="email col-md-4">
+                    <label for="inputEmail" class="form-label text-white">Email</label>
+                    <input type="email" name="email" class="form-control" id="inputEmail" required>
+                </div>
+                <div class="telefono col-md-4">
+                    <label for="inputPhone" class="form-label text-white">Telefono(opcional)</label>
+                    <input type="tel" name="celu" class="form-control tel-input" id="inputPhone">
+                </div>
+            </div>
+            <div class="textarea">
+                <label for="exampleFormControlTextarea1" class="form-label text-white">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn">Enviar</button>
+            </div>
+        </div>
+        <div class="map-responsive d-flex position-relative">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1674.1071922633741!2d-60.63003693755045!3d-32.94534884376762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1e12f60319%3A0x6e476fe50171f456!2sGalp%C3%B3n%2015!5e0!3m2!1ses!2sar!4v1669662566120!5m2!1ses!2sar" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </form>
+    <!-- FORMULARIO DE CONTACTO-->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top__items">
+                <div class="footer__top__item footer__top__mddepagos">
+                    <h5 class="footer__top__title">Medios de pago</h5>
+                    <div class="footer__top__icons">
+                        <img src="img/medios-de-pago.png" class="footer__top__icon1">
+                    </div>
+                </div>
+                <div class="footer__top__item">
+                    <h5 class="footer__top__title">Medios de envío</h5>
+                    <div class="footer__top__icons">
+                        <img src="img/correo-argentino.png" class="footer__top__icon">
+                    </div>
+                </div>
+                <div class="footer__top__item">
+                    <h5 class="footer__top__title">Nuestras redes sociales</h5>
+                    <ul class="footer_social-media-list">
+                        <a href="https://facebook.com" class="footer_social-media-link text-black">
+                            <i class="fab fa-facebook-f footer__top__social-media-icon"></i>
+                            facebook
+                        </a>
+                        <a href="https://instagram.com" class="footer__top__social-media-link text-black">
+                            <i class="fab fa-instagram footer_social-media-icon"></i>
+                            instagram
+                        </a>
+                        <a href="https://tiktok.com" class="footer__top__social-media-link text-black">
+                            <i class="fab fa-tiktok footer_social-media-icon"></i>
+                            tiktok
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="derechos-de-autor">
+                <hr class="featurette-divider">
+                <p class="float-end"><a href="#">⏏</a></p>
+                <p>© 2022 ntbog02</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
